@@ -12,6 +12,6 @@ const userSchema = new mongoose.Schema({
 });
 
 // ✅ Correct way to avoid recompiling the model multiple times
-const userModel = mongoose.models.user || mongoose.model("user", userSchema);
+const usermodel = mongoose.models.user || mongoose.model("user", userSchema);
 
-export default userModel;
+export default usermodel;
