@@ -1,6 +1,6 @@
 //controller/userController.js
 
-import userModel from "../model/usermodel.js";
+import userModel from "../model/userModel.js";
 
 export const getUserData=async(req,res)=>{
     try {

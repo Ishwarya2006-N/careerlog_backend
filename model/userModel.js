@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
   resetOtpExpireAt: { type: Number, default: 0 },
 });
 
-// ✅ Correct way to avoid recompiling the model multiple times
-const usermodel = mongoose.models.user || mongoose.model("user", userSchema);
+// Avoid recompiling the model multiple times
+const userModel = mongoose.models.user || mongoose.model("user", userSchema);
 
-export default usermodel;
+export default userModel;
